@@ -3,6 +3,7 @@ class HashUtil
   # 返回 value 是最大数对应的 key
   def key_of_max(hash)
     # TODO
+    # hash.select { |key, value| value==hash.values.max }
     max_value=hash.values.max
     hash.invert
     hash.key(max_value)
